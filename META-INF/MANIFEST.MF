@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: GrepBugs for Eclipse
+Bundle-SymbolicName: com.grepbugs.plugin.eclipse;singleton:=true
+Bundle-Version: 1.0.0
+Bundle-Activator: com.grepbugs.plugin.eclipse.Activator
+Bundle-Vendor: GrepBugs
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.apache.commons.lang,
+ org.eclipse.core.resources,
+ org.eclipse.ui.ide,
+ org.eclipse.ui.workbench.texteditor,
+ org.eclipse.jface.text
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: lib/gson-2.2.4.jar,
+ lib/guava-18.0.jar,
+ .
+Export-Package: com.grepbugs.plugin.eclipse,
+ com.grepbugs.plugin.eclipse.ui
